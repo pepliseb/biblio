@@ -1,7 +1,5 @@
 package pl.pepliseb.biblio.model;
 
-import ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -13,7 +11,10 @@ public class Author {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     private Long id;
+
     private String name;
+
+
     private String surname;
 
     public Long getId() {
